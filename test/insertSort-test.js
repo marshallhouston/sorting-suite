@@ -14,4 +14,10 @@ describe('insertSort', function() {
       assert.deepEqual(insertSort(input), [2, 3, 10, 12, 15])
     })
   })
+  context('with positive and negative numbers', function() {
+    it('sorts from least to greatest', function() {
+      input = [5, -5, 4, -12, -2]
+      assert.deepEqual(insertSort(input), [-12, -5, -2, 4, 5])
+    })
+  })
 })
