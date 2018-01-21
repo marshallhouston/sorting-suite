@@ -8,4 +8,10 @@ describe('insertSort', function() {
       assert.deepEqual(insertSort(input), [1, 2, 3])
     })
   })
+  context('with a collection of five numbers', function() {
+    it('sorts from least to greatest', function() {
+      input = [10, 15, 3, 2, 12]
+      assert.deepEqual(insertSort(input), [2, 3, 10, 12, 15])
+    })
+  })
 })
